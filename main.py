@@ -111,7 +111,7 @@ tuner = kt.Hyperband(
     build_model,
     objective=kt.Objective('val_loss', 'min'),
     max_epochs=15,
-    hyperband_iterations=6,
+    hyperband_iterations=3,
     directory='tuning_results',
     project_name='movie_recommendation'
 )
